@@ -1,0 +1,19 @@
+# Core testing
+pytest==7.4.2
+pytest-playwright==0.6.0
+playwright==1.39.0
+
+# Reporting
+allure-pytest==2.10.0
+
+# Optional: for data handling and utilities
+# pytest-xdist==3.3.1           # Parallel test execution
+# pytest-rerunfailures==11.1    # Retry failed tests
+# pytest-html==4.1.1            # HTML reports (optional alongside Allure)        
+
+# Environment & Config management
+# python-dotenv==1.0.1          # Load environment variables
+# pyyaml==6.0.1                  # YAML config support
+
+# Logging and debugging
+loguru==0.7.0                  # Enhanced logging
