@@ -1,5 +1,4 @@
-**Python Playwright Automation Framework** integrated with **Pytest**, **Allure Reporting**, and **GitHub Actions CI/CD**. 
-
+**Python Playwright Automation Framework** integrated with **Pytest**, **Allure Reporting**, and **GitHub Actions CI/CD**.
 
 ---
 
@@ -23,10 +22,10 @@ playwright-python-framework/
 │   └── ...
 │
 ├── utils/                 # Utility modules
-│   ├── config.py
-│   └── helpers.py
+│   ├── constants.py
+│   └── test_data.py
 │
-├── reports/               # Allure reports output
+├── allure-report/               # Allure reports output
 │
 ├── requirements.txt       # Python dependencies
 ├── pytest.ini             # Pytest configuration
@@ -147,7 +146,7 @@ allure serve reports/
 
 ## 📦 Page Object Model Example
 
-**pages/login\_page.py**
+**pages/login_page.py**
 
 ```python
 class LoginPage:
@@ -163,7 +162,7 @@ class LoginPage:
         self.page.click(self.login_btn)
 ```
 
-**tests/test\_login.py**
+**tests/test_login.py**
 
 ```python
 from pages.login_page import LoginPage
@@ -187,9 +186,9 @@ name: Python Playwright CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   test:
@@ -229,13 +228,13 @@ jobs:
 
 ## 🔹 Features
 
-* ✅ Playwright Python Automation
-* ✅ Page Object Model (POM)
-* ✅ Pytest test runner
-* ✅ Allure reporting
-* ✅ GitHub Actions CI/CD
-* ✅ Cross-browser testing support
-* ✅ Configurable fixtures and utilities
+- ✅ Playwright Python Automation
+- ✅ Page Object Model (POM)
+- ✅ Pytest test runner
+- ✅ Allure reporting
+- ✅ GitHub Actions CI/CD
+- ✅ Cross-browser testing support
+- ✅ Configurable fixtures and utilities
 
 ---
 
@@ -244,7 +243,7 @@ jobs:
 1. Clone the repository
 2. Set up `.venv` and install dependencies
 3. Run tests locally or on CI/CD
-4. Generate and view Allure reports
+4. Generate and view Allure reports (pytest tests/ --alluredir=report)
 5. Push code to GitHub to trigger GitHub Actions
 
 ---
